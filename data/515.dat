@@ -1,0 +1,10 @@
+c: 5
+d: 98
+h: J6543
+s: KT654
+
+bid:
+	1c,1d,1h
+
+a: 1n
+exp: This is one of the exceptions in the relay system; instead of bidding 1 spade as normal you open 1 no trump, which shows 5-5 in the majors and very weak (0-4 hcp).

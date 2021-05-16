@@ -1,0 +1,24 @@
+<html>
+  <heading>
+    <title>Precision Training for Smart Bridge Players!</title>
+  </heading>
+  
+{% block content %}
+<h1>Precision Bidding Training in Detail Right Here!</h1><br>
+  <h2>Based on this book:</h2><br>
+      
+<img src="img/precisionsimp.jpeg" />
+
+<div class="content">
+  <form action="/setup" method="POST">
+   <p> <h2>Do you want to </h2><p>
+  <input type="radio" id="basic" name="level" value="basic">
+  <label for="basic">Stick with the basics</label><br>
+  <input type="radio" id="advanced" name="level" value="advanced">
+  <label for="advanced">Learn more advanced bids</label><br>
+  <input type="radio" id="both" name="level" value="both">
+  <label for="both">Learn all levels!</label><br/>
+  <input type="submit"/>
+  </form>
+  </div>
+{% endblock %}

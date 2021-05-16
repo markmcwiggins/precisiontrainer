@@ -1,0 +1,9 @@
+2021-05-15 17:50:39,565 [Thread-4] INFO  finalcloj.nrepl - nREPL server stopped 
+2021-05-15 17:50:39,585 [Thread-4] INFO  io.undertow - stopping server: Undertow - 2.2.7.Final 
+2021-05-15 17:50:39,732 [Thread-4] INFO  luminus.http-server - HTTP server stopped 
+2021-05-15 17:50:39,734 [Thread-4] INFO  finalcloj.env - 
+-=[finalcloj has shut down successfully]=- 
+2021-05-15 17:50:40,064 [Thread-4] INFO  finalcloj.core - #'finalcloj.core/repl-server stopped 
+2021-05-15 17:50:40,065 [Thread-4] INFO  finalcloj.core - #'finalcloj.core/http-server stopped 
+2021-05-15 17:50:40,065 [Thread-4] INFO  finalcloj.core - #'finalcloj.handler/init-app stopped 
+2021-05-15 17:50:40,065 [Thread-4] INFO  finalcloj.core - #'finalcloj.db.core/*db* stopped 

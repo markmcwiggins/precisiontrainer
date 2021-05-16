@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+
+import sys
+
+
+fyle = sys.argv[1]
+
+fopen = open(fyle)
+
+
+
+for line in fopen:
+    (suit, cards) = line.split()

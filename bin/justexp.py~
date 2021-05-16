@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+
+import re
+import fileinput
+
+for line in fileinput:
+    print(line)
+    
+
+
+#if explanation:
+#    fh.write('<input type="hidden" value="%s" name="explanation"/>' % explanation)

@@ -1,0 +1,43 @@
+
+{% extends 'bridgehand.html' %}
+{% block 'body' %}
+<img src="/static/cards/qclubs.png">
+<img src="/static/cards/10clubs.png">
+<img src="/static/cards/8clubs.png">
+<img src="/static/cards/3clubs.png">
+<br>
+<img src="/static/cards/2diamonds.png">
+<br>
+<img src="/static/cards/acehearts.png">
+<img src="/static/cards/9hearts.png">
+<img src="/static/cards/8hearts.png">
+<img src="/static/cards/2hearts.png">
+<br>
+<img src="/static/cards/kspades.png">
+<img src="/static/cards/qspades.png">
+<img src="/static/cards/9spades.png">
+<img src="/static/cards/4spades.png">
+<br>
+<br><br><h1>What is your opening bid with this hand?</h1><br><br>
+<form action="/answer" method="POST">
+<input type="radio" value="1" name="amp">1</input>
+<input type="radio" value="2" name="amp">2</input>
+<input type="radio" value="3" name="amp">3</input>
+<input type="radio" value="4" name="amp">4</input>
+<input type="radio" value="5" name="amp">5</input>
+<input type="radio" value="6" name="amp">6</input>
+<input type="radio" value="7" name="amp">7</input>
+<br>
+<input type="radio" value="Spades" name="suit">Spades</input><br/>
+<input type="radio" value="Hearts" name="suit">Hearts</input><br/>
+<input type="radio" value="Diamonds" name="suit">Diamonds</input><br/>
+<input type="radio" value="Clubs" name="suit">Clubs</input><br/>
+<input type="radio" value="NT" name="suit">NT</input><br/>
+<input type="radio" value="Pass" name="suit">Pass</input><br/>
+<br/>
+
+ {% csrf-field %}
+<input type="hidden" value="2,Diamonds" name="ra"/>
+<input type="hidden" value=" you have 11 hcp and 4-4 in the majors and 4-1 in the minors. Perfect for this bid!" name="explanation"/><input type="submit">
+</form>
+{% endblock %}

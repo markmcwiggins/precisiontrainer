@@ -1,0 +1,101 @@
+2021-05-02 09:27:20,152 [Thread-4] INFO  finalcloj.nrepl - nREPL server stopped 
+2021-05-02 09:27:20,167 [Thread-4] INFO  io.undertow - stopping server: Undertow - 2.2.7.Final 
+2021-05-02 09:27:20,176 [Thread-4] INFO  luminus.http-server - HTTP server stopped 
+2021-05-02 09:27:20,177 [Thread-4] INFO  finalcloj.env - 
+-=[finalcloj has shut down successfully]=- 
+2021-05-02 09:27:20,235 [Thread-4] INFO  finalcloj.core - #'finalcloj.core/repl-server stopped 
+2021-05-02 09:27:20,236 [Thread-4] INFO  finalcloj.core - #'finalcloj.core/http-server stopped 
+2021-05-02 09:27:20,236 [Thread-4] INFO  finalcloj.core - #'finalcloj.handler/init-app stopped 
+2021-05-02 09:27:20,236 [Thread-4] INFO  finalcloj.core - #'finalcloj.db.core/*db* stopped 
+2021-05-02 09:29:16,950 [main] INFO  finalcloj.env - 
+-=[finalcloj started successfully using the development profile]=- 
+2021-05-02 09:29:18,513 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2021-05-02 09:29:18,533 [main] INFO  io.undertow - starting server: Undertow - 2.2.7.Final 
+2021-05-02 09:29:18,571 [main] INFO  org.xnio - XNIO version 3.8.0.Final 
+2021-05-02 09:29:18,809 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final 
+2021-05-02 09:29:18,858 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 3000 
+2021-05-02 09:29:19,012 [main] INFO  luminus.http-server - server started on port 3000 
+2021-05-02 09:29:19,015 [main] INFO  finalcloj.nrepl - starting nREPL server on port 7000 
+2021-05-02 09:29:19,100 [main] INFO  finalcloj.core - #'finalcloj.db.core/*db* started 
+2021-05-02 09:29:19,102 [main] INFO  finalcloj.core - #'finalcloj.handler/init-app started 
+2021-05-02 09:29:19,103 [main] INFO  finalcloj.core - #'finalcloj.handler/app-routes started 
+2021-05-02 09:29:19,105 [main] INFO  finalcloj.core - #'finalcloj.core/http-server started 
+2021-05-02 09:29:19,106 [main] INFO  finalcloj.core - #'finalcloj.core/repl-server started 
+2021-05-02 09:35:38,655 [Thread-4] INFO  finalcloj.nrepl - nREPL server stopped 
+2021-05-02 09:35:38,675 [Thread-4] INFO  io.undertow - stopping server: Undertow - 2.2.7.Final 
+2021-05-02 09:35:38,719 [Thread-4] INFO  luminus.http-server - HTTP server stopped 
+2021-05-02 09:35:38,722 [Thread-4] INFO  finalcloj.env - 
+-=[finalcloj has shut down successfully]=- 
+2021-05-02 09:35:38,863 [Thread-4] INFO  finalcloj.core - #'finalcloj.core/repl-server stopped 
+2021-05-02 09:35:38,864 [Thread-4] INFO  finalcloj.core - #'finalcloj.core/http-server stopped 
+2021-05-02 09:35:38,865 [Thread-4] INFO  finalcloj.core - #'finalcloj.handler/init-app stopped 
+2021-05-02 09:35:38,865 [Thread-4] INFO  finalcloj.core - #'finalcloj.db.core/*db* stopped 
+2021-05-02 09:37:04,705 [main] INFO  finalcloj.env - 
+-=[finalcloj started successfully using the development profile]=- 
+2021-05-02 09:37:08,698 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2021-05-02 09:37:08,742 [main] INFO  io.undertow - starting server: Undertow - 2.2.7.Final 
+2021-05-02 09:37:08,795 [main] INFO  org.xnio - XNIO version 3.8.0.Final 
+2021-05-02 09:37:09,494 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final 
+2021-05-02 09:37:09,614 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 3000 
+2021-05-02 09:37:10,195 [main] INFO  luminus.http-server - server started on port 3000 
+2021-05-02 09:37:10,200 [main] INFO  finalcloj.nrepl - starting nREPL server on port 7000 
+2021-05-02 09:37:10,452 [main] INFO  finalcloj.core - #'finalcloj.db.core/*db* started 
+2021-05-02 09:37:10,456 [main] INFO  finalcloj.core - #'finalcloj.handler/init-app started 
+2021-05-02 09:37:10,456 [main] INFO  finalcloj.core - #'finalcloj.handler/app-routes started 
+2021-05-02 09:37:10,457 [main] INFO  finalcloj.core - #'finalcloj.core/http-server started 
+2021-05-02 09:37:10,458 [main] INFO  finalcloj.core - #'finalcloj.core/repl-server started 
+2021-05-02 09:51:25,549 [Thread-4] INFO  finalcloj.nrepl - nREPL server stopped 
+2021-05-02 09:51:25,551 [Thread-4] INFO  io.undertow - stopping server: Undertow - 2.2.7.Final 
+2021-05-02 09:51:25,562 [Thread-4] INFO  luminus.http-server - HTTP server stopped 
+2021-05-02 09:51:25,564 [Thread-4] INFO  finalcloj.env - 
+-=[finalcloj has shut down successfully]=- 
+2021-05-02 09:51:25,640 [Thread-4] INFO  finalcloj.core - #'finalcloj.core/repl-server stopped 
+2021-05-02 09:51:25,640 [Thread-4] INFO  finalcloj.core - #'finalcloj.core/http-server stopped 
+2021-05-02 09:51:25,641 [Thread-4] INFO  finalcloj.core - #'finalcloj.handler/init-app stopped 
+2021-05-02 09:51:25,643 [Thread-4] INFO  finalcloj.core - #'finalcloj.db.core/*db* stopped 
+2021-05-02 09:55:05,860 [main] INFO  finalcloj.env - 
+-=[finalcloj started successfully using the development profile]=- 
+2021-05-02 09:55:08,220 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2021-05-02 09:55:08,261 [main] INFO  io.undertow - starting server: Undertow - 2.2.7.Final 
+2021-05-02 09:55:08,315 [main] INFO  org.xnio - XNIO version 3.8.0.Final 
+2021-05-02 09:55:08,790 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final 
+2021-05-02 09:55:08,841 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 3000 
+2021-05-02 09:55:09,008 [main] INFO  luminus.http-server - server started on port 3000 
+2021-05-02 09:55:09,009 [main] INFO  finalcloj.nrepl - starting nREPL server on port 7000 
+2021-05-02 09:55:09,093 [main] INFO  finalcloj.core - #'finalcloj.db.core/*db* started 
+2021-05-02 09:55:09,093 [main] INFO  finalcloj.core - #'finalcloj.handler/init-app started 
+2021-05-02 09:55:09,093 [main] INFO  finalcloj.core - #'finalcloj.handler/app-routes started 
+2021-05-02 09:55:09,094 [main] INFO  finalcloj.core - #'finalcloj.core/http-server started 
+2021-05-02 09:55:09,094 [main] INFO  finalcloj.core - #'finalcloj.core/repl-server started 
+2021-05-02 09:59:43,174 [Thread-4] INFO  finalcloj.nrepl - nREPL server stopped 
+2021-05-02 09:59:43,205 [Thread-4] INFO  io.undertow - stopping server: Undertow - 2.2.7.Final 
+2021-05-02 09:59:43,224 [Thread-4] INFO  luminus.http-server - HTTP server stopped 
+2021-05-02 09:59:43,226 [Thread-4] INFO  finalcloj.env - 
+-=[finalcloj has shut down successfully]=- 
+2021-05-02 09:59:43,320 [Thread-4] INFO  finalcloj.core - #'finalcloj.core/repl-server stopped 
+2021-05-02 09:59:43,320 [Thread-4] INFO  finalcloj.core - #'finalcloj.core/http-server stopped 
+2021-05-02 09:59:43,320 [Thread-4] INFO  finalcloj.core - #'finalcloj.handler/init-app stopped 
+2021-05-02 09:59:43,321 [Thread-4] INFO  finalcloj.core - #'finalcloj.db.core/*db* stopped 
+2021-05-02 10:02:26,039 [main] INFO  finalcloj.env - 
+-=[finalcloj started successfully using the development profile]=- 
+2021-05-02 10:02:28,708 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider 
+2021-05-02 10:02:28,728 [main] INFO  io.undertow - starting server: Undertow - 2.2.7.Final 
+2021-05-02 10:02:28,762 [main] INFO  org.xnio - XNIO version 3.8.0.Final 
+2021-05-02 10:02:29,081 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final 
+2021-05-02 10:02:29,135 [main] DEBUG io.undertow - Configuring listener with protocol HTTP for interface 0.0.0.0 and port 3000 
+2021-05-02 10:02:29,373 [main] INFO  luminus.http-server - server started on port 3000 
+2021-05-02 10:02:29,376 [main] INFO  finalcloj.nrepl - starting nREPL server on port 7000 
+2021-05-02 10:02:29,486 [main] INFO  finalcloj.core - #'finalcloj.db.core/*db* started 
+2021-05-02 10:02:29,487 [main] INFO  finalcloj.core - #'finalcloj.handler/init-app started 
+2021-05-02 10:02:29,487 [main] INFO  finalcloj.core - #'finalcloj.handler/app-routes started 
+2021-05-02 10:02:29,487 [main] INFO  finalcloj.core - #'finalcloj.core/http-server started 
+2021-05-02 10:02:29,487 [main] INFO  finalcloj.core - #'finalcloj.core/repl-server started 
+2021-05-02 12:29:58,883 [Thread-4] INFO  finalcloj.nrepl - nREPL server stopped 
+2021-05-02 12:29:58,888 [Thread-4] INFO  io.undertow - stopping server: Undertow - 2.2.7.Final 
+2021-05-02 12:29:58,899 [Thread-4] INFO  luminus.http-server - HTTP server stopped 
+2021-05-02 12:29:58,902 [Thread-4] INFO  finalcloj.env - 
+-=[finalcloj has shut down successfully]=- 
+2021-05-02 12:29:58,947 [Thread-4] INFO  finalcloj.core - #'finalcloj.core/repl-server stopped 
+2021-05-02 12:29:58,948 [Thread-4] INFO  finalcloj.core - #'finalcloj.core/http-server stopped 
+2021-05-02 12:29:58,948 [Thread-4] INFO  finalcloj.core - #'finalcloj.handler/init-app stopped 
+2021-05-02 12:29:58,949 [Thread-4] INFO  finalcloj.core - #'finalcloj.db.core/*db* stopped 
