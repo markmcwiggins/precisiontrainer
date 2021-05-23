@@ -146,3 +146,41 @@ java.net.BindException: Address already in use (Bind failed)
 2021-05-16 16:33:30,378 [Thread-4] INFO  finalcloj.core - #'finalcloj.core/http-server stopped 
 2021-05-16 16:33:30,378 [Thread-4] INFO  finalcloj.core - #'finalcloj.handler/init-app stopped 
 2021-05-16 16:33:30,379 [Thread-4] INFO  finalcloj.core - #'finalcloj.db.core/*db* stopped 
+2021-05-16 17:30:20,712 [main] INFO  finalcloj.env - 
+-=[finalcloj started successfully]=- 
+2021-05-16 17:30:21,453 [main] INFO  io.undertow - starting server: Undertow - 2.2.7.Final 
+2021-05-16 17:30:21,465 [main] INFO  org.xnio - XNIO version 3.8.0.Final 
+2021-05-16 17:30:21,562 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final 
+2021-05-16 17:30:21,626 [main] INFO  luminus.http-server - server started on port 3000 
+2021-05-16 17:30:21,628 [main] INFO  finalcloj.core - #'finalcloj.db.core/*db* started 
+2021-05-16 17:30:21,628 [main] INFO  finalcloj.core - #'finalcloj.handler/init-app started 
+2021-05-16 17:30:21,628 [main] INFO  finalcloj.core - #'finalcloj.handler/app-routes started 
+2021-05-16 17:30:21,628 [main] INFO  finalcloj.core - #'finalcloj.core/http-server started 
+2021-05-16 17:30:21,629 [main] INFO  finalcloj.core - #'finalcloj.core/repl-server started 
+2021-05-16 17:32:06,786 [Thread-4] INFO  io.undertow - stopping server: Undertow - 2.2.7.Final 
+2021-05-16 17:32:06,799 [Thread-4] INFO  luminus.http-server - HTTP server stopped 
+2021-05-16 17:32:06,801 [Thread-4] INFO  finalcloj.env - 
+-=[finalcloj has shut down successfully]=- 
+2021-05-16 17:32:06,862 [Thread-4] INFO  finalcloj.core - #'finalcloj.core/repl-server stopped 
+2021-05-16 17:32:06,862 [Thread-4] INFO  finalcloj.core - #'finalcloj.core/http-server stopped 
+2021-05-16 17:32:06,862 [Thread-4] INFO  finalcloj.core - #'finalcloj.handler/init-app stopped 
+2021-05-16 17:32:06,862 [Thread-4] INFO  finalcloj.core - #'finalcloj.db.core/*db* stopped 
+2021-05-16 17:32:24,765 [main] INFO  finalcloj.env - 
+-=[finalcloj started successfully]=- 
+2021-05-16 17:32:25,417 [main] INFO  io.undertow - starting server: Undertow - 2.2.7.Final 
+2021-05-16 17:32:25,425 [main] INFO  org.xnio - XNIO version 3.8.0.Final 
+2021-05-16 17:32:25,522 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final 
+2021-05-16 17:32:25,595 [main] INFO  luminus.http-server - server started on port 9090 
+2021-05-16 17:32:25,596 [main] INFO  finalcloj.core - #'finalcloj.db.core/*db* started 
+2021-05-16 17:32:25,596 [main] INFO  finalcloj.core - #'finalcloj.handler/init-app started 
+2021-05-16 17:32:25,596 [main] INFO  finalcloj.core - #'finalcloj.handler/app-routes started 
+2021-05-16 17:32:25,596 [main] INFO  finalcloj.core - #'finalcloj.core/http-server started 
+2021-05-16 17:32:25,597 [main] INFO  finalcloj.core - #'finalcloj.core/repl-server started 
+2021-05-16 17:33:14,929 [Thread-4] INFO  io.undertow - stopping server: Undertow - 2.2.7.Final 
+2021-05-16 17:33:14,938 [Thread-4] INFO  luminus.http-server - HTTP server stopped 
+2021-05-16 17:33:14,939 [Thread-4] INFO  finalcloj.env - 
+-=[finalcloj has shut down successfully]=- 
+2021-05-16 17:33:14,998 [Thread-4] INFO  finalcloj.core - #'finalcloj.core/repl-server stopped 
+2021-05-16 17:33:14,998 [Thread-4] INFO  finalcloj.core - #'finalcloj.core/http-server stopped 
+2021-05-16 17:33:14,998 [Thread-4] INFO  finalcloj.core - #'finalcloj.handler/init-app stopped 
+2021-05-16 17:33:14,998 [Thread-4] INFO  finalcloj.core - #'finalcloj.db.core/*db* stopped 

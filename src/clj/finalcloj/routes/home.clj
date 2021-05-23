@@ -18,13 +18,6 @@
     )
   )
 
-(defn math-question [request]
-  (let [difficulty (get-in request [:cookies "difficulty" :value])
-        question-string (if (= "hard" difficulty)
-                          "What is 152 + 987?"
-                          "What is 1 + 1")]
-    (layout/render request "math-question.html" {:difficulty difficulty
-                                                 :question-string question-string})))
 
 
 (defn rand-page [request]
