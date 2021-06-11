@@ -1,27 +1,24 @@
 
 {% extends 'bridgehand.html' %}
 {% block 'body' %}
-<img src="/static/cards/aceclubs.png">
-<img src="/static/cards/kclubs.png">
 <img src="/static/cards/qclubs.png">
 <img src="/static/cards/jclubs.png">
-<img src="/static/cards/7clubs.png">
-<img src="/static/cards/5clubs.png">
+<img src="/static/cards/9clubs.png">
+<img src="/static/cards/2clubs.png">
 <br>
 <img src="/static/cards/acediamonds.png">
-<img src="/static/cards/qdiamonds.png">
-<img src="/static/cards/5diamonds.png">
+<img src="/static/cards/kdiamonds.png">
+<img src="/static/cards/jdiamonds.png">
+<img src="/static/cards/4diamonds.png">
 <img src="/static/cards/3diamonds.png">
-<img src="/static/cards/2diamonds.png">
 <br>
-<img src="/static/cards/8hearts.png">
+<img src="/static/cards/9hearts.png">
+<img src="/static/cards/7hearts.png">
 <br>
+<img src="/static/cards/acespades.png">
 <img src="/static/cards/3spades.png">
 <br>
 <br><h2>The bidding so far:<br>Opener: 1 clubs<br>
-Responder: 1 diamonds<br>
-Opener: 1 hearts<br>
-Responder: 1 spades<br>
 </h2><H1>What is your bid now?</H1><br>
 <br><br><h1></h1><br><br>
 <form action="/answer" method="POST">
@@ -42,7 +39,7 @@ Responder: 1 spades<br>
 <br/>
 
  {% csrf-field %}
-<input type="hidden" value="4,Clubs" name="ra"/>
-<input type="hidden" value=" You have 6 clubs and 5 diamonds ... relay bid is helpful to show this!" name="explanation"/><input type="submit">
+<input type="hidden" value="2,NT" name="ra"/>
+<input type="hidden" value=" You have 15 HCP, putting you in slam territory with your partner's 1 club opener. This bid shows 14+." name="explanation"/><input type="submit">
 </form>
 {% endblock %}
