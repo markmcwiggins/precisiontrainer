@@ -18,10 +18,10 @@
 <img src="/static/cards/4hearts.png">
 <br>
 <br>
-<br><h2>The bidding so far:<br>Opener: 1 clubs<br>
-Responder: 1 diamonds<br>
-Opener: 1 hearts<br>
-Responder: 1 spades<br>
+<br><h2>The bidding so far:<br>Opener: 1 club<br>
+Responder: 1 diamond<br>
+Opener: 1 heart<br>
+Responder: 1 spade<br>
 </h2><H1>What is your bid now?</H1><br>
 <br><br><h1></h1><br><br>
 <form action="/answer" method="POST">
@@ -42,7 +42,7 @@ Responder: 1 spades<br>
 <br/>
 
  {% csrf-field %}
-<input type="hidden" value="3,Clubs" name="ra"/>
+<input type="hidden" value="3,Clubs|4,Hearts" name="ra"/>
 <input type="hidden" value=" You'd like a forcing bid to perfectly describe this beautiful hand, but we don't have one. Since it's worth 26 points with the void in spades, I think it's worth a (mild) flyer on 4 hearts. Closest match to an actual bid in our system is 3 clubs, which offically shows 5 hearts and 5 clubs and is forcing ..." name="explanation"/><input type="submit">
 </form>
 {% endblock %}

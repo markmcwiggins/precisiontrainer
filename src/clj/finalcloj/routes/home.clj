@@ -50,7 +50,7 @@
     
 
 (defn suitfix [suit amp]
-  (if (= (Integer/parseInt amp) 1)
+  (if (= amp 1)
     (exceptnt suit)
      suit
      ))
@@ -59,34 +59,60 @@
 (defn getans [request]
   (let [ra (get-in request [:flash :ra])]
   
-  (let [amp (get-in request [:flash :amp])]
-    (println "amp:" amp)
+    (let [amp (get-in request [:flash :amp])]
+      (if (nil? amp) (def ampr 0)
+          ( def ampr (Integer/parseInt amp)))
+      
+    (println "amp:" ampr)
     (let [suit (get-in request [:flash :suit])]
-      (def finalsuit (suitfix suit amp))
- { :suit finalsuit :amp amp :ra ra } 
-))))
+      (def finalsuit (suitfix suit ampr))
+ { :suit finalsuit :amp ampr :ra ra } 
+ ))))
+
+(defn fixra [ra]
+  (def partfix (str/replace (str/replace ra "|" " or ") "," " "))
+  (if (str/starts-with? partfix "1")
+    (if (str/ends-with? partfix "s")
+    (clojure.string/join "" (drop-last partfix))
+    partfix
+    )
+    partfix
+    )
+    
+)
 
 (defn wrong [request]
   (def finalstuff (getans request))
   (def amp (:amp finalstuff))
   (def ra (:ra finalstuff))
   (def finalsuit (:suit finalstuff))
+  (if (= amp 0)
+    (def ampwrong "")
+    (def ampwrong amp)
+    )
+
+  (def fixedra (fixra ra))
 
   (let [explanation (get-in request [:flash :explanation])]
  
-  (layout/render request "wrong.html" {:ra ra :explanation explanation :ans amp :suit finalsuit}))
+  (layout/render request "wrong.html" {:ra fixedra :explanation explanation :ans ampwrong :suit finalsuit}))
   )
 
 (defn rightsuit [ra]
-  (str/split ra #",")
+ (clojure.string/join (str/split ra #","))
   )
 
 (defn right [request]
   (def finalstuff (getans request))
   (def amp (:amp finalstuff))
   (def finalsuit (:suit finalstuff))
+    (if (= amp 0)
+    (def ampright "")
+    (def ampright amp)
+    )
+
   (let [explanation (get-in request [:flash :explanation])]   
-  (layout/render request "right.html" {:explanation explanation :ans amp :suit finalsuit})))
+  (layout/render request "right.html" {:explanation explanation :ans ampright :suit finalsuit})))
 
 
 (defn setup [{:keys [params]}]
@@ -95,23 +121,64 @@
         level-cookie {:max-age 3600 :value level}]
   (-> (response/found "/question")
       (assoc-in ,,, [:cookies "level"] level-cookie)))
+  )
+
+(defn checkans [amp suit rightans]
+  (println (str "ampsuit:"  amp  suit))
+  (println "rightans: " rightans)
+  (cond
+    (= amp 0)
+    (if (= rightans "Pass")
+    true
+    false
+    )
+    (>= amp 1)
+    (if (= (str amp suit) (str rightans))
+      true
+      false
+      )
+    
+  )
 )
+       
+(defn seqize [rightans]
+  (seq (clojure.string/split rightans #"\|"))
+  )
 
 (defn answer-proc  [{:keys [params]}]
   (println params) ; Print params in repl, helpful for debugging
 
-  (def rightans (rightsuit (:ra params)))
-  (def amp (:amp params))
+  (let [rightans (rightsuit (:ra params))] rightans
+       (println "rightans:" rightans)
+       (def rightlist (seqize rightans))
+       )
+  (def amp  (:amp params))
   (def suit (:suit params))
+
+  (if (nil? amp)
+    (def ampr 0)
+    (def ampr (Integer/parseInt amp))
+    )
+     
   
-  (println rightans)
-  (def ampsuit (str amp suit))
-  (println ampsuit)
-  (def applyans (apply str rightans))
-  (println applyans)
+  (println rightlist)
+  (println "ampr" ampr)
+  (println "suit" suit)
+
+  ;(if (seq? rightlist)
+  ;  (def rightx rightlist)
+  ;  (do
+  ;    (println "not a sequence!" rightlist)
+  ;    (def rightx (cons rightlist ()))
+  ;    )
+                                        ;  )
+  (def rightx rightlist)
 
   (if
-      (= (str amp suit) (apply str rightans))
+      
+     (some #(checkans ampr suit %) rightx)
+      
+     ; (checkans ampr suit rightlist)
     (-> (response/found "/right")
         (assoc ,,, :flash params))
     (-> (response/found "/wrong")
