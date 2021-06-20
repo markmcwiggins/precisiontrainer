@@ -47,15 +47,33 @@ capital = { 'c' : 'Clubs',
 def expandans(a):
     if a == '??':
         return a
-    n = a[0]
-    s = a[1]
-    print(n,s)
-    return '%s,%s' % (n,capital[s])
-    
+    allanswers = a.split('|')
+
+    anslist = []
+    for k in allanswers:
+        if k == "Pass":
+            anslist.append("Pass")
+            continue
+        n = k[0]
+        s = k[1]
+        print(n,s)
+        anslist.append('%s,%s' % (n,capital[s]))
+
+    finala = ''
+    n = 0
+    for a in anslist:
+        if n > 0:
+            finala += '|'
+        n += 1
+        finala += a
+    return finala
 
 def expandbid(b):
     suit = suitnames[b[1] + ':']
-    return '%d %s' % (int(b[0]),suit)
+    n = int(b[0])
+    if n == 1:
+        suit = suit.rstrip('s')
+    return '%d %s' % (n,suit)
 
 previousbids = False
 def dobids(bids):

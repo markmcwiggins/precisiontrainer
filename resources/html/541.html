@@ -1,24 +1,30 @@
 
 {% extends 'bridgehand.html' %}
 {% block 'body' %}
-<img src="/static/cards/5clubs.png">
+<img src="/static/cards/kclubs.png">
+<img src="/static/cards/9clubs.png">
 <br>
+<img src="/static/cards/8diamonds.png">
+<img src="/static/cards/7diamonds.png">
+<img src="/static/cards/4diamonds.png">
+<img src="/static/cards/3diamonds.png">
 <br>
-<img src="/static/cards/acehearts.png">
-<img src="/static/cards/khearts.png">
 <img src="/static/cards/qhearts.png">
-<img src="/static/cards/10hearts.png">
+<img src="/static/cards/7hearts.png">
 <img src="/static/cards/6hearts.png">
-<img src="/static/cards/5hearts.png">
+<img src="/static/cards/4hearts.png">
 <img src="/static/cards/3hearts.png">
-<img src="/static/cards/2hearts.png">
 <br>
-<img src="/static/cards/kspades.png">
-<img src="/static/cards/qspades.png">
-<img src="/static/cards/6spades.png">
-<img src="/static/cards/4spades.png">
+<img src="/static/cards/9spades.png">
+<img src="/static/cards/2spades.png">
 <br>
-<br><br><h1>What is your opening bid with this hand?</h1><br><br>
+<br><h2>The bidding so far:<br>Opener: 1 club<br>
+Responder: 1 diamond<br>
+Opener: 1 heart<br>
+Responder: 1 spade<br>
+Opener: 2 no trump<br>
+</h2><H1>What is your bid now?</H1><br>
+<br><br><h1></h1><br><br>
 <form action="/answer" method="POST">
 <input type="radio" value="1" name="amp">1</input>
 <input type="radio" value="2" name="amp">2</input>
@@ -37,7 +43,7 @@
 <br/>
 
  {% csrf-field %}
-<input type="hidden" value="1,Clubs|4,Clubs" name="ra"/>
-<input type="hidden" value=" You have only 14 hcp, but the shape of this hand gives you plenty to boost and open 1 club. This is why you alert USUALLY 16+ for this bid. This also qualifies as a NAMYATS bid, so if you want to do that, the bid is 4 clubs." name="explanation"/><input type="submit">
+<input type="hidden" value="3,NT" name="ra"/>
+<input type="hidden" value=" Your partner's last bid shows 24-25 HCP and balanced; you have 5. This looks to be short of slam in most cases; just bid 3N, which makes easily." name="explanation"/><input type="submit">
 </form>
 {% endblock %}
